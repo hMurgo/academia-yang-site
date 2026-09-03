@@ -1,0 +1,201 @@
+  :root{
+    --preto: #111111;
+    --branco: #ffffff;
+    --cinza: #6b6b6b;
+    --cinza-claro: #e6e6e6;
+    --linha: #d8d8d8;
+    --vermelho-selo: #7a1f1f; /* usado só como pequeno detalhe, tipo um selo/carimbo */
+  }
+
+
+  body{
+    background: var(--branco);
+    color: var(--preto);
+    font-family: 'Inter', sans-serif;
+  }
+
+
+  h1, h2, h3, .fonte-titulo{
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+
+  /* ===== CABEÇALHO / NAVBAR ===== */
+  .navbar-academia{
+    background: var(--preto);
+    border-bottom: 3px solid var(--preto);
+  }
+
+
+  .navbar-academia .navbar-brand{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--branco) !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  .navbar-academia .nav-link{
+    color: var(--cinza-claro) !important;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.15s ease;
+  }
+
+
+  .navbar-academia .nav-link:hover,
+  .navbar-academia .nav-link.active{
+    color: var(--branco) !important;
+    border-bottom: 1px solid var(--branco);
+  }
+
+
+  /* ===== LOGO YIN YANG (SVG, sem precisar de imagem externa) ===== */
+  .logo-yinyang{
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+
+
+  /* ===== FAIXA DE TÍTULO DA PÁGINA ===== */
+  .faixa-titulo{
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+    border-bottom: 1px solid var(--linha);
+    margin-bottom: 2.5rem;
+  }
+
+
+  .faixa-titulo h1{
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+
+  .faixa-titulo p{
+    color: var(--cinza);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0;
+  }
+
+
+  /* ===== DIVISÓRIA DE TURMA ===== */
+  .divisoria-turma{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 0 1.8rem 0;
+  }
+
+
+  .divisoria-turma .linha{
+    flex: 1;
+    height: 1px;
+    background: var(--linha);
+  }
+
+
+  .divisoria-turma h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--preto);
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 0.04em;
+  }
+
+
+  .divisoria-turma .marca{
+    width: 14px;
+    height: 14px;
+    opacity: 0.75;
+  }
+
+
+  /* ===== CARTÃO DE PERSONAGEM ===== */
+  .card-personagem{
+    border: 1px solid var(--preto);
+    border-radius: 0; /* cantos retos = clima de ficha/documento de academia */
+    height: 100%;
+    background: var(--branco);
+  }
+
+
+  .card-personagem:hover{
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 0px var(--preto);
+  }
+
+
+  .card-personagem .foto-wrapper{
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: var(--cinza-claro);
+    overflow: hidden;
+    border-bottom: 1px solid var(--preto);
+  }
+
+
+  .card-personagem .foto-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+
+  .card-personagem .card-body{
+    padding: 1.1rem 1.2rem 1.3rem 1.2rem;
+  }
+
+
+  .card-personagem .nome-personagem{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+
+  .card-personagem .descricao{
+    font-size: 0.88rem;
+    color: var(--cinza);
+    margin-bottom: 0.9rem;
+    line-height: 1.4;
+  }
+
+
+  .card-personagem .poder-label{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--vermelho-selo);
+    font-weight: 600;
+    margin-bottom: 0.15rem;
+  }
+
+
+  .card-personagem .poder-valor{
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+
+  footer{
+    border-top: 1px solid var(--linha);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--cinza);
+    font-size: 0.8rem;
+    margin-top: 4rem;
+  }
