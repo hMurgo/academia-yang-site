@@ -4,7 +4,7 @@
     --cinza: #6b6b6b;
     --cinza-claro: #e6e6e6;
     --linha: #d8d8d8;
-    --vermelho-selo: #7a1f1f; /* usado só como pequeno detalhe, tipo um selo/carimbo */
+    --vermelho-selo: #7a1f1f;
   }
 
 
@@ -20,7 +20,6 @@
   }
 
 
-  /* ===== CABEÇALHO / NAVBAR ===== */
   .navbar-academia{
     background: var(--preto);
     border-bottom: 3px solid var(--preto);
@@ -64,7 +63,6 @@
   }
 
 
-  /* ===== FAIXA DE TÍTULO DA PÁGINA ===== */
   .faixa-titulo{
     text-align: center;
     padding: 3rem 1rem 2rem 1rem;
@@ -89,7 +87,6 @@
   }
 
 
-  /* ===== DIVISÓRIA DE TURMA ===== */
   .divisoria-turma{
     display: flex;
     align-items: center;
@@ -122,10 +119,9 @@
   }
 
 
-  /* ===== CARTÃO DE PERSONAGEM ===== */
   .card-personagem{
     border: 1px solid var(--preto);
-    border-radius: 0; /* cantos retos = clima de ficha/documento de academia */
+    border-radius: 0;
     height: 100%;
     background: var(--branco);
   }
